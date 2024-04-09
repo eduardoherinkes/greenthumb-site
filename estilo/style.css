@@ -1,0 +1,152 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "OpenSauceBold";
+    src: url("../fontes/OpenSauceOne-Bold.ttf");
+}
+@font-face {
+    font-family: "OpenSauce";;
+    src: url("../fontes/OpenSauceSans-Regular.ttf");
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #ECF8E5;
+    margin: 0px 170px 0px 170px;
+}
+
+header {
+    padding: 110px 40px 40px 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cabecalho-imagem {
+    width: 82px; 
+    height: 90px;
+}
+
+.cabecalho-titulo {
+    padding-left: 12px;
+    letter-spacing: 4px;
+    font-family: OpenSauceBold;
+    color: #347571;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.main-topo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-slogan {
+    font-family: OpenSauce;
+    color: #347571;
+    font-size: 3em;
+    padding-left: 20px;
+}
+
+.main-imagem1 {
+    width: 700px;
+}
+
+.main-botao {
+    background-color: #5EC57E;
+    font-family: OpenSauceBold;
+    border-radius: 30px;
+    color: white;
+    width: 200px;
+    height: 80px;
+    border: none;
+    font-size: 1.2em;
+    margin-top: 30px;
+    margin-left: 106px;
+    box-shadow: 4px 5px 2px rgba(0, 0, 0, 0.144);
+}
+
+.main-botao:hover {
+    transition-duration: 0.6s;
+    background-color: #347571;
+    color: white;
+}
+
+.main-botao a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-seta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobrenos {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sobrenos-conjunto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sobrenos-imagem {
+    width: 700px;
+    margin-left: -70px;
+}
+
+.sobrenos-titulo {
+    font-family: OpenSauceBold;
+    font-size: 2.7em;
+    color: #5EC57E;
+    margin-left: -440px;
+    margin-bottom: 50px;
+}
+
+.sobrenos-conteudo {
+    font-family: OpenSauce;
+    color: #347571;
+    font-size: 2.3em;
+}
+
+.nossosservicos {
+    margin-top: 60px;
+}
+
+.nossoservicos-titulo {
+    font-family: OpenSauceBold;
+    font-size: 2.7em;
+    color: #5EC57E;
+    position: absolute;
+    left: 50%;
+    margin-left: -160px;
+}
+
+.nossosservicos-imagens {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nossosservidos-vaso {
+   padding-left: 300px;
+}
+
+.nossosservicos-regador {
+    padding-left: 300px;
+}
