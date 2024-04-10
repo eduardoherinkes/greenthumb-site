@@ -25,12 +25,12 @@ header {
     align-items: center;
 }
 
-.cabecalho-imagem {
+#cabecalho-imagem {
     width: 82px; 
     height: 90px;
 }
 
-.cabecalho-titulo {
+#cabecalho-titulo {
     padding-left: 12px;
     letter-spacing: 4px;
     font-family: OpenSauceBold;
@@ -39,25 +39,25 @@ header {
     font-weight: bolder;
 }
 
-.main-topo {
+#main-topo {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
 
-.main-slogan {
+#main-slogan {
     font-family: OpenSauce;
     color: #347571;
     font-size: 3em;
     padding-left: 20px;
 }
 
-.main-imagem1 {
+#main-imagem1 {
     width: 700px;
 }
 
-.main-botao {
+#main-botao {
     background-color: #5EC57E;
     font-family: OpenSauceBold;
     border-radius: 30px;
@@ -71,24 +71,24 @@ header {
     box-shadow: 4px 5px 2px rgba(0, 0, 0, 0.144);
 }
 
-.main-botao:hover {
+#main-botao:hover {
     transition-duration: 0.6s;
     background-color: #347571;
     color: white;
 }
 
-.main-botao a {
+#main-botao a {
     text-decoration: none;
     color: white;
 }
 
-.main-seta {
+#main-seta {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.sobrenos {
+#sobrenos {
     margin-top: 70px;
     display: flex;
     flex-direction: row;
@@ -96,19 +96,19 @@ header {
     justify-content: space-around;
 }
 
-.sobrenos-conjunto {
+#sobrenos-conjunto {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
 
-.sobrenos-imagem {
+#sobrenos-imagem {
     width: 700px;
     margin-left: -70px;
 }
 
-.sobrenos-titulo {
+#sobrenos-titulo {
     font-family: OpenSauceBold;
     font-size: 2.7em;
     color: #5EC57E;
@@ -116,17 +116,17 @@ header {
     margin-bottom: 50px;
 }
 
-.sobrenos-conteudo {
+#sobrenos-conteudo {
     font-family: OpenSauce;
     color: #347571;
     font-size: 2.3em;
 }
 
-.nossosservicos {
+#nossosservicos {
     margin-top: 60px;
 }
 
-.nossoservicos-titulo {
+#nossoservicos-titulo {
     font-family: OpenSauceBold;
     font-size: 2.7em;
     color: #5EC57E;
@@ -135,7 +135,7 @@ header {
     margin-left: -160px;
 }
 
-.nossosservicos-imagens {
+#nossosservicos-imagens {
     padding-top: 100px;
     display: flex;
     align-items: center;
@@ -143,10 +143,24 @@ header {
 
 }
 
-.nossosservidos-vaso {
+#nossosservidos-vaso {
    padding-left: 300px;
 }
 
-.nossosservicos-regador {
+#nossosservicos-regador {
     padding-left: 300px;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    transition: all 1s;
+    transform: translateX(0);
+    filter: blur(0);
 }

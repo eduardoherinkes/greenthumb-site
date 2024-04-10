@@ -1,7 +1,15 @@
-const lastOne = document.querySelector('.main-imagem1')
+
 
 const myObserver = new IntersectionObserver ( (entries) => {
-    console.log(entries)
+    entries.forEach( (entry) => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add('show')
+        } else {
+            entry.target.classList.remove('show')
+        }
+    })
 })
 
-myObserver.observe(lastOne)
+const elements = document.querySelectorAll('.hidden')
+
+elements.forEach( (element) => myObserver.observe(element)) 
