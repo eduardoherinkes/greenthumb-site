@@ -140,16 +140,19 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 300px;
+    transform: translate();
 
 }
 
-#nossosservidos-vaso {
-   padding-left: 300px;
+#nossosservicos-titulos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 330px;
 }
 
-#nossosservicos-regador {
-    padding-left: 300px;
-}
 
 .hidden {
     opacity: 0;
